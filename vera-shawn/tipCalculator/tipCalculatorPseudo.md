@@ -18,6 +18,8 @@ END
 
 *Variables:*
 
+tip
+
 terribleTip
 
 poorTip
