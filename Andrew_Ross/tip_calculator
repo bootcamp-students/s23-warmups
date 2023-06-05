@@ -1,0 +1,23 @@
+//DOESN'T PASS TEST, BUT IS GOOD CODE
+
+// init the rating of serviceand amount of the order
+function calculateTip(amount, rating) {
+  case rating = 0{
+  console.log(0 * amount)
+}
+  case rating = 1{
+  console.log(.05 * amount );
+}
+case rating = 2{
+  console.log(.1 * amount );
+}
+case rating = 3{
+  console.log(.15 * amount );
+}
+case rating = 4{
+  console.log(.2 * amount );
+}
+break 
+}
+// make function to calculate tip
+//display tip
