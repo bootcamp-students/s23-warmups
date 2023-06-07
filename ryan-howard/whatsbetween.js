@@ -1,0 +1,12 @@
+function between(a, b) {
+    const result = [];
+    for (let i = a; i <= b; i++) {
+      result.push(i);
+    }
+    return result;
+  }
+  
+  //result is the array variable that is empty to store result
+  //in the for loop, it goes through all the numbers, until it gets to less thanor equal to b. the integer counts up til then
+  //the push adds each number in the for loop to the array
+  //when loop finishes, the return brings back whatever was in the loop
