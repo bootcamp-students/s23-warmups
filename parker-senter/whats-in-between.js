@@ -7,20 +7,20 @@ function between(a, b) {
     return arr;
   }
   
-  /*
-  PESUDOCODE
-  VARS:
-  a = one number
-  b = another number
-  arr = the array containing all numbers
+/*
+PESUDOCODE
+VARS:
+a = one number
+b = another number
+arr = the array containing all numbers
   
-  FUNC:
-  function lessThan(a, b) {
+FUNC:
+function lessThan(a, b) {
     if (a < b) {
-      [a, b];
+        [a, b];
     }
     else {
-      'a is not less than b.'
+    'a is not less than b.'
     }
-  }
-  */
+}
+*/
