@@ -1,0 +1,10 @@
+/* VARIABLES distanceToPump, mpg, fuelLeft, totalMiles 
+      FUNCTION
+          Multiply mpg by fuel left to get total miles
+            IF totalMiles >= distanceToBPump RETURN TRUE ELSE FALSE
+              END
+*/
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+ return mpg * fuelLeft >= distanceToPump;
+  }
