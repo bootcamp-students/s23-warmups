@@ -1,0 +1,11 @@
+/* RETRIEVE year
+      DIVIDE year by 100 to get a decimal value
+        use Math.ceil to round the number up to the nearest integer which should be the value of the century
+          END
+            */
+
+
+function century(year) {
+  let century = Math.ceil(year/100);
+  return century;
+}
