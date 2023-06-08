@@ -1,0 +1,9 @@
+ function century(year) {
+  // Finish this :)
+  let yearCentury = 0;
+    while (year >0){  //while loop makes sure the condition is true, if it is less than or equal to zero then it will count the turn of the century as the next century
+    year = year - 100; 
+    yearCentury = yearCentury + 1;} //this takes the specified 100 years and adds one to account for the first hundred years starting at year 1
+  return yearCentury;
+}
+
