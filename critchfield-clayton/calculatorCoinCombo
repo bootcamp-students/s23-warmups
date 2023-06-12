@@ -1,0 +1,24 @@
+/* Given a parameter CENTS and need to convert it into number of coins 
+      PENNIES = COINS[0];
+        NICKELS = COINS[1];
+          DIMES = COINS[2];
+            QUARTERS = COINS[3]
+              First need to check if divisble by 25
+                Then by 10
+                  Then by 5
+                    Then if less than 5 add to [0]
+                      Modify each index to be one of the value of the coin (i.e. 25 = 1 for quarters);
+*/
+
+function coinCombo (cents) {
+	let coins = [1,5,10,25];
+  let result = [0,0,0,0];
+  // loop through the value of the coins starting from 25... 
+  for (let i = coins.length - 1; i >= 0; i--){
+    result[i] = Math.floor(cents/coins[i]);
+  //return the leftover amount to continue the for loop
+    cents %= coins[i];
+  }
+  
+  return result;
+};
