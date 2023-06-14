@@ -11,13 +11,13 @@ var makeEveryLetterAfterXCaps = function (str, letter) {
     // enter solution here
     // need to change every letter after user input "str" to be caps
     // using 2nd argument as the letter to reference
-      let modifiedStr = str;
-      for (let i = 0; i < str.length; i++) {
-        if (i === "x") {
-          modifiedStr = charAt(i);
-          console.log(modifiedStr);
+    let modifiedStr = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str[i - 1] === letter) {
+            modifiedStr = str[i].toUpperCase;
+            return modifiedStr;
         }
-      }
-    
-    // END
     }
+      return modifiedStr;
+    // END
+}
