@@ -1,6 +1,6 @@
-function likes(names) {
-  var upvotes = names.length;
-  
+function likes(names) {                      //upvotes is the variable that counts the likes
+  var upvotes = names.length;              //if statements determine output based on number of names. (Probably couldve just used names.length in hindsight)
+                                              //each is just a string concatenation based on number of upvotes variable or number of names or names.length
   if (upvotes === 0) {
     return "no one likes this";
   } 
