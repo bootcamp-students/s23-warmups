@@ -1,0 +1,14 @@
+function likes (names) {
+  if (names.length === 0) { //Command for if nobody liked post, means array = 0
+    return 'no one likes this'; //Will return this message
+  } else if (names.length === 1) { //Array will have one input
+    return `${names[0]} likes this`; // Chooses first name from array
+  } else if (names.length === 2) { //Array has 2 inputs
+    return `${names[0]} and ${names[1]} like this`; //Chooses both names from array
+  } else if (names.length === 3) { //Array will have 3 inputs
+    return `${names[0]}, ${names[1]} and ${names[2]} like this`; //3 Inputs
+  } else if (names.length > 3) { //If the array inputs is greater than 3
+    return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+    // The program will only display the first 2 names and then the message.
+  }
+  }
