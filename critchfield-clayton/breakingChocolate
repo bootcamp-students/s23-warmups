@@ -1,0 +1,15 @@
+/* START
+      Given two parameters for dimensions of a chocolate bar n, and m.
+      Each square is 1x1 dimension (n = 1, m = 1)
+      If dimensions are greater than one need to break down to get 1x1 dimensions and figure out how many breaks
+      Examples given are always 1 less than the dimensions given
+  END */
+
+
+function breakChocolate(n,m) {
+  if (n * m === 0) {
+    return 0;
+  } else {
+    return n * m - 1;
+  }
+}
