@@ -1,0 +1,18 @@
+/* START
+    Given a multidimensional array (arrays inside of arrays)
+    Accessing arrays inside of arrays is done by using double square brackets index 1 of array one: [0][0]
+    Loop through the indexes to run through the entire array of indexes
+    Store this value inside of an index and use [] notation to access the desired index of the array
+    Return element by the specified indexes given as a parameter
+  END
+*/
+
+
+function getElement(array, indexes) {
+  let result = array;
+  for (let i = 0; i < indexes.length; i++) {
+  let index = indexes[i];
+  result = result[index];
+  }
+  return result;
+};
