@@ -1,0 +1,20 @@
+/* START  
+    Given a string "s"
+    Loop through the words of the string
+    If the current word is less than infinity, use math.min to return smallest number
+    Increment to the next word, repeat the process until string is complete
+    Return result
+    END
+*/
+
+
+function findShort(s){
+  let words = s.split(" ");
+  let shortestLength = Infinity;
+  for (let i = 0; i < words.length; i++) {
+    let currentWordLength = words[i].length;
+    shortestLength = Math.min(shortestLength, currentWordLength);
+  }
+  return shortestLength;
+}
+
