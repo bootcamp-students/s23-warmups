@@ -1,0 +1,9 @@
+/* START
+  use filter to create new list of friends name with only 4 letters
+END */
+
+function friend(friends){
+  const result = friends.filter(name => name.length === 4 );
+  console.log(result);
+  return result;
+}
