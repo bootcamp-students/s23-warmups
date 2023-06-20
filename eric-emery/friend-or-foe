@@ -1,0 +1,9 @@
+function friend(friends){
+   var newFriends = friends.filter(item => item.length === 4);
+  return newFriends;
+}
+
+//PSUEDOCODE
+//.filter()?
+//If not equal to 4 remove from array
+//Or make new array?
