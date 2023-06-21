@@ -1,0 +1,9 @@
+/* START
+  Given a list of positive numbers and strings
+  Need to filter out strings
+  Return new array with strings filtered out
+END */
+
+function filter_list(l) {
+  return l.filter(item => typeof item == 'number');
+}
