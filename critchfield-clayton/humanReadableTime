@@ -1,0 +1,28 @@
+/* START
+    CONVERT SECONDS TO HOURS AND MINUTES BY DIVIDING BY 60
+    CANNOT GO OVER 359999
+    FIRST DIVIDE BY 3600 TO GET HOURS, HH
+    REMAINDER NEEDS TO BE DIVIDED BY 60 TO GET MINUTES, MM 
+    THEN REMAINDER OF THAT IS SECONDS, SS
+*/
+
+
+
+function humanReadable (seconds) {
+  let hours = Math.floor(seconds / 3600);
+  let minutes = Math.floor(seconds % 3600 / 60); //remainder after dividing for hours converted to minutes
+  let secondsLeft = seconds % 60; //remainder of seconds after dividing by minutes is the seconds left over 
+  
+  if (hours < 10) {
+    hours = "0" + hours;
+  }
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+  if (secondsLeft < 10) {
+    secondsLeft = "0" + secondsLeft;
+  }
+  
+  let result = hours + ":" + minutes + ":" + secondsLeft;
+  return result;
+}
