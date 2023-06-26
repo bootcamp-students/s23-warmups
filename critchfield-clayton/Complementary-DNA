@@ -1,0 +1,27 @@
+/* START
+  Given DNA strand
+  Loop through the entire string 
+  Return the opposite character
+ END*/
+
+function DNAStrand(dna){
+  let answer = '';
+  for(let i = 0; i < dna.length; i++) {
+    switch(dna[i]) {
+        case 'A':
+        answer += 'T'
+        break;
+        case 'T':
+        answer += 'A'
+        break;
+        case 'G':
+        answer += 'C'
+        break;
+        case 'C':
+        answer += 'G'
+        break;
+        default:
+        }
+    }
+    return answer; 
+  }
