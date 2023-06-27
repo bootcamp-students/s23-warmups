@@ -1,0 +1,15 @@
+/* START
+  Given an array 'numbers' with 10 different digits
+  For index 0 puts a parenthesis ( before it
+  For index 2 puts a parenthesis ) after it and a space
+  For index 5 puts a - after it 
+  Whole phone number is returned as string
+END */
+
+function createPhoneNumber(numbers){
+  let phNum = "(aaa) aaa-aaaa"
+  for (let i =0; i < numbers.length; i++) {
+    phNum = phNum.replace("a", numbers[i])
+  }
+  return phNum
+}
