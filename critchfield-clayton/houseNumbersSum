@@ -1,0 +1,20 @@
+/* START 
+  Given an array 'inputArray'
+  Create a new array 'newArr'
+  Loop through all the numbers in the given array
+  If current index has 0 then end the loop and return sum
+  If current index does not equal 0 then add to sum
+  When loop is complete, return sum
+END */
+
+function houseNumbersSum(inputArray) {
+  let sum = 0;
+  for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i] === 0) {
+      return sum; 
+    } else if (inputArray[i] !== 0) {
+      sum += inputArray[i];
+    }
+  }
+  return sum;
+}
