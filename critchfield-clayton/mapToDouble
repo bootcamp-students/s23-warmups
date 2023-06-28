@@ -1,0 +1,9 @@
+/* START
+  Given an 'array'
+  return a new array (newArr)
+  Use the map function to return new array with values twice as large as the original array
+END */
+
+function double(array) {
+    return newArr = array.map(item => item * 2);
+}
