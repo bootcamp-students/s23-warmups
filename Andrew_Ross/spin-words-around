@@ -1,0 +1,14 @@
+function spinWords(string) {
+  let words = string.split(' ');
+  let spunWords = [];
+
+  for (let word of words) {
+    if (word.length >= 5) {
+      spunWords.push(word.split('').reverse().join(''));
+    } else {
+      spunWords.push(word);
+    }
+  }
+
+  return spunWords.join(' ');
+}
