@@ -1,0 +1,17 @@
+function spinWords(string){
+ let newArr = string.split(' ');
+  let output = '';
+  newArr.map((str, i) => {
+    if (str.length >= 5){
+      newArr[i] = str.split('').reverse().join('');
+    } else {
+      newArr[i] = str;
+    }
+  output = newArr.join(' ');
+  });
+  return output
+  }
+
+//first you want to split the string into individual words
+//next you want to identify words that are 5 letters of longer
+//after you want to create a if else to specifically flip those words and insert them back in the spot where they were prior
