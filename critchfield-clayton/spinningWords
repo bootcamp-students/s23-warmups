@@ -1,0 +1,23 @@
+/* START
+  Given a string 'string'
+  Words with more than 5 letters are reversed
+  Words less than 5 letters come back as normal
+  Convert string to an array using split(",")
+  Loop through array using for loop or forEach method
+  Use logic operators if i > 5 then use reverse method and push to newArr
+  if < 5 then no change push to newArr
+END */
+
+function spinWords(string){
+  let words = string.split(" ");
+  let newArr = []
+  words.forEach(function reverse(word) {
+    if (word.length >= 5) {
+      let reversedWord = word.split("").reverse().join("");
+      newArr.push(reversedWord);
+    } else {
+      newArr.push(word);
+    }
+  })
+  return newArr.join(" ");
+}
