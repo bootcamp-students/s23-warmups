@@ -1,0 +1,15 @@
+//camel case is the fit letter of each word after first word capitalized
+//function gets a string passed to it
+//function combines string into one word
+//capitalizes the first letter of each word but the first word
+
+function toCamelCase(str){
+  str = str.split('');
+  return str.map(function(el, i){
+    if(el == '-' || el == '_'){
+      el = str[i+1].toUpperCase();
+      str.splice(i+1, 1);
+    }
+    return el;
+  }).join('');
+}
