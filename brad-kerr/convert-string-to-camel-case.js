@@ -1,8 +1,7 @@
 // Return: A string that removes dashes and underscores and the subsequent words in the string as capitals.
 // Parameter: A string 
-// Create an answer variable that is an empty array
+// Create an answer variable that is an empty string
 // Split the string by their dashes or underscores 
-// Remove the dashes and underscores
 // Loop through the array and captitalize the subsequent words. 
 // Store result in answer variable 
 // Return answer 
