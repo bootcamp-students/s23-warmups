@@ -1,0 +1,13 @@
+function solution(number) {
+  var na = ~~(number/1000);
+  var nb = ~~(number%1000/100);
+  var nc = ~~(number%100/10);
+  var nd = number%10;
+
+  var a = ['','M','MM','MMM']
+  var b = ['','C','CC','CCC','CD','D','DC','DCC', 'DCCC', 'CM'];
+  var c = ['','X','XX','XXX','XL','L','LX','LXX','LXXX','XC']
+  var d = ['','I','II','III','IV','V','VI','VII','VIII','IX']
+  
+  return a[na] + b[nb] + c[nc] + d[nd];
+}
