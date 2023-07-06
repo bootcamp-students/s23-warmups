@@ -1,0 +1,10 @@
+/* START 
+  Given an array
+  Must use the reduce function to return the sum of all the values in the array
+END */ 
+
+function sum(array) {
+  return array.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue; 
+  }, 0);
+}
