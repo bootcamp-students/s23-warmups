@@ -1,0 +1,19 @@
+/* START 
+  Given an array of numbers
+  All numbers have at least one duplicate except for one
+  The array will contain at least 3 different numbers
+  Find the one number that does not repeat itself
+END */
+
+function findUniq(arr) {
+    arr.sort();
+  if (arr[0] !== arr[1]) {
+    return arr[0];
+  }
+  for (let i = 2; i < arr.length; i++) {
+    if (arr[i] !== arr[1]) {
+      return arr[i];
+    }
+  }
+  return null;
+}
