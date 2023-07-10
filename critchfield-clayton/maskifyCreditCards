@@ -1,0 +1,17 @@
+/* START
+  Given a string of numbers
+  Conver the string to an array
+  Iterate down from the length of the array to the first for numbers. last, second to last, third to last, fourth to last, 
+  Anything less than that convert to a asterik
+  Rejoin the array and convert back to a string 
+END */
+
+
+function maskify(cc) {
+  if (cc.length > 4) {
+    for (let i = 0; i < cc.length - 4; i++) {
+      cc = cc.substring(0, i) + "#" + cc.substring(i + 1);
+    }
+  }
+  return cc;
+}
