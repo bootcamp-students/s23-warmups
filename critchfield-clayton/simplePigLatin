@@ -1,0 +1,21 @@
+/* START 
+  Take first letter of each word move to the end of the word
+  Split word into an array, then split each word into an array
+  Take first letter an concat 'ay' to it
+  Add 'ay' to the first letter
+  Leave punctuation untouched
+END */
+
+function pigIt(str){
+  let pigSentence = '';
+  str = str.split(' ');
+  for (let i = 0; i < str.length; i++) {
+    let word = str[i];
+    if (word.charCodeAt(0) >= 65 && word.charCodeAt(0) <= 122) {
+      let pigLetter = word.slice(0, 1) + 'ay';
+      word = word.substring(1) + pigLetter;
+    }
+    pigSentence += word + " ";
+  }
+  return pigSentence.trim();
+}
