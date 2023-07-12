@@ -1,0 +1,14 @@
+# START
+# Given two arrays of integers
+# Combine both lists together 
+# Use for loop to loop through each number
+# += to new variable sum
+# return sum
+# END
+
+def array_plus_array(arr1,arr2):
+    sum = 0
+    arr = arr1 + arr2
+    for num in arr:
+        sum += num
+    return sum
