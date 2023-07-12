@@ -1,0 +1,15 @@
+# START
+# Given a string of words
+# Use for loop to go through every word in the string
+# Use len method to get length of every word
+# Use conditional operator to check every word, if the next word is shorter make that the new value of the word
+# END 
+
+
+def find_short(s):
+    s = s.split()
+    l = float('inf')
+    for word in s: 
+        if len(word) < l:
+            l = len(word)
+    return l
