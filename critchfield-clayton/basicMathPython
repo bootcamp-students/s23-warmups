@@ -1,0 +1,11 @@
+# START
+# Given a string of numbers and words
+# Need to split up the strings from the integers
+# Convert the numbers to integers
+# Convert the strings to math operators depending on the text
+# END
+
+def calculate(s):
+    s = s.replace("plus", "+").replace("minus", "-")  # Replace 'plus' with '+' and 'minus' with '-'
+    result = eval(s)  # Evaluate the modified string as a Python expression
+    return str(result)  # Convert the result back to a string
