@@ -1,0 +1,12 @@
+# START
+# Given a string 'x'
+# Remove the spaces from the string 
+# return the result
+# END
+
+def no_space(x):
+    result = ""
+    for letters in x:
+        if letters != ' ':
+            result += letters
+    return result
