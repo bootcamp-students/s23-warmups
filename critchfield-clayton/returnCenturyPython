@@ -1,0 +1,12 @@
+# START 
+# Given a parameter 'year'
+# Return the century it is in
+# Example: 1709 - 18th century return 18
+# Example: 1999 - 20th century return 20
+# END
+
+def century(year):
+    century = year // 100
+    if year % 100 == 0:
+        return century
+    return century + 1
