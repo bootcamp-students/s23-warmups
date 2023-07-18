@@ -1,0 +1,4 @@
+/* Given a list of employees and organize them in descending order from companies tables */
+
+SELECT * FROM companies
+ORDER by employees desc;
