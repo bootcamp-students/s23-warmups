@@ -1,0 +1,7 @@
+/* RETURN THE SAME TABLE WHERE ALL THE TEXT FIELDS ARE CHANGED TO THEIR ASCII CODE OF THEIR FIRST BYTE */
+SELECT 
+ id,
+ ASCII(name) as name,
+ birthday,
+ ASCII(race) as race
+FROM demographics; 
