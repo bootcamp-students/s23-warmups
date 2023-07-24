@@ -1,0 +1,11 @@
+# START
+# Given a chocolate bar dimension n x m 
+# Each square is size of 1x1
+# Make function that returns minimum number of breaks
+# Example : Given 2 x 1 chocolate bar, requires just one break
+# END
+
+def break_chocolate(n, m):
+    if n <= 0 or m <= 0:
+        return 0
+    return n * m - 1
