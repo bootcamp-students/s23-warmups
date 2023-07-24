@@ -1,0 +1,20 @@
+# START
+# Given three parameters health, monsters, and damage
+# If health turns to <= 0 should return 'hero died'
+# If # of monsters is > 3 take a hit, subtract damage * hits from health
+# END 
+
+import math
+
+def kill_monsters(health, monsters, damage):
+    if monsters <= 3:
+        hits = 0
+        return f"hits: {hits}, damage: 0, health: {health}"
+    elif monsters > 3:
+        hits = (monsters - 1) // 3
+        damage = hits * damage
+        health = health - damage 
+        if health <= 0:
+            return 'hero died'
+        else: 
+            return f"hits: {hits}, damage: {damage}, health: {health}"
