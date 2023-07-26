@@ -1,0 +1,21 @@
+# START
+# Create a like system 
+# Given a list of names 
+# If list length is 0 - no one likes this
+# Return names likes this if greater than 0 or less than 4
+# If greater than 3 print the first two names and then say remaining_number like this
+# END
+
+
+def likes(names):
+    if len(names) == 0:
+        return 'no one likes this'
+    elif len(names) == 1:
+        return names[0] + ' likes this'
+    elif len(names) == 2: 
+        return names[0] + " and " +  names[1] + " like this"
+    elif len(names) == 3:
+        return names[0] + ", " + names[1] + " and " + names[2] + " like this" 
+    else:
+        remaining_length = len(names) - 2
+        return names[0] + ", " + names[1] + " and " + str(remaining_length) + " others like this"
