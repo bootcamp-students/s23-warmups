@@ -1,0 +1,16 @@
+# START
+# Given a sequence
+# Go through the sequence using for loop
+# If letter or number is greater than the previous index, then add it to the new array
+# If it is less than or greater than the previous index, do not add and continue the loop
+# Return the new array
+# END
+
+def unique_in_order(sequence):
+    result = []
+    last_item = ''
+    for item in sequence:
+        if item != last_item:
+            result.append(item)
+            last_item = item
+    return result
