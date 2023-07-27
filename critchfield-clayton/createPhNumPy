@@ -1,0 +1,5 @@
+def create_phone_number(n):
+    format = "(xxx) xxx-xxxx"
+    for num in n:
+        format = format.replace("x", str(num), 1)
+    return format
