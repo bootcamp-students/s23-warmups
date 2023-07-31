@@ -1,0 +1,24 @@
+/* START 
+A man has an old car worth $2,000 - startPriceOld
+Wants to buy a car worth $8,000 - startPriceNew
+Every month he can save $1,000 but the value of his old car goes down starting at 1.5% per month
+Then increases by 0.5% after every two months
+END */
+
+function nbMonths(startPriceOld, startPriceNew, savingperMonth, percentLossByMonth) {
+  let month = 0;
+  let total = startPriceOld;
+    while (total < startPriceNew) {
+    total += savingperMonth;
+    total -= startPriceOld * percentLossByMonth / 100;
+    startPriceNew -= (startPriceNew*(percentLossByMonth/100))
+    startPriceOld -= (startPriceOld*(percentLossByMonth/100))
+    month ++;
+      if (month % 2 !== 0) {
+        percentLossByMonth += 0.5;
+      } else {
+        percentLossByMonth
+      }
+    }
+  return [month, Math.round(total - startPriceNew)];
+}
