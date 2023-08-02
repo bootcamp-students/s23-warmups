@@ -1,0 +1,27 @@
+# START
+# Given two arrays a and b
+# Check whether or not the two arrays have the same elements with the same multiplicities
+# In other words, if 'a' contains 11 then b should contain 121
+# Example: a [2,4,6] b[4,16,36] would return True
+# Return true of false
+# END
+
+import math
+
+def comp(array1, array2):
+    list = []
+    if array1 == None or array2 == None:
+        return False
+    for num in array1:
+        index = array1.index(num)
+        num = abs(num)
+        array1[index] = num
+    for num in array2:
+        sqroot = math.sqrt(num)
+        list.append(sqroot)
+    list.sort()
+    array1.sort()
+    if list == array1:
+        return True
+    else: 
+        return False
